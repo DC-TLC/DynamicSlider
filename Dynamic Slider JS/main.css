@@ -1,0 +1,130 @@
+*,
+:after,
+:before {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    padding: 2rem;
+}
+
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.slider {
+    position: relative;
+}
+
+.slide-wrapper {
+    position: inherit;
+    height: 50rem;
+}
+
+.slide {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: fade 0.5s linear forwards;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.slide.show {
+    display: block;
+}
+
+.slide img {
+    height: 100%;
+}
+
+.number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 3rem;
+    color: white;
+    font-size: 3rem;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 10%, transparent 50%);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.5rem;
+    z-index: 100;
+}
+
+.slider-controls {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.control-arrow {
+    padding: 2rem 3rem;
+    background: rgb(0, 0, 0, 0.6);
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.control-arrow:hover {
+    background: white;
+    color: rgb(60, 60, 60);
+}
+
+.control-arrow:active {
+    transition: all 0.05s linear;
+    background: rgb(0, 0, 0, 0.6);
+    color: white;
+}
+
+.slider-dots {
+    display: flex;
+    gap: 1.5rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.dot {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 1rem;
+    background: white;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: transform 0.1s linear;
+}
+
+.dot.active,
+.dot:hover {
+    transform: scale(1.5);
+    opacity: 1;
+}

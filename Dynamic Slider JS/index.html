@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Learning JavaScript</title>
+        <!-- Icons -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        />
+        <!-- External CSS -->
+        <link rel="stylesheet" href="main.css" />
+        <!-- External JS -->
+        <script defer src="main.js"></script>
+    </head>
+    <body>
+        <!--===================| Slider 1 |===================-->
+        <div class="slider" id="slider1">
+            <h3 class="number">
+                <span class="current-slide-num"></span>/<span
+                    class="last-slide-num"
+                ></span>
+            </h3>
+            <div class="slide-wrapper">
+                <div class="slide">
+                    <img src="assets/images/slider 1/img1.jpg" alt="Image #1" />
+                </div>
+                <div class="slide">
+                    <img src="assets/images/slider 1/img2.jpg" alt="Image #2" />
+                </div>
+                <div class="slide">
+                    <img src="assets/images/slider 1/img3.jpg" alt="Image #3" />
+                </div>
+                <div class="slide">
+                    <img src="assets/images/slider 1/img4.jpg" alt="Image #4" />
+                </div>
+                <div class="slide">
+                    <img src="assets/images/slider 1/img5.jpg" alt="Image #5" />
+                </div>
+                <div class="slide">
+                    <img src="assets/images/slider 1/img6.jpg" alt="Image #6" />
+                </div>
+                <div class="slide">
+                    <img src="assets/images/slider 1/img7.jpg" alt="Image #7" />
+                </div>
+                <div class="slide">
+                    <img src="assets/images/slider 1/img8.jpg" alt="Image #8" />
+                </div>
+                <div class="slide">
+                    <img src="assets/images/slider 1/img9.jpg" alt="Image #9" />
+                </div>
+                <div class="slide">
+                    <img
+                        src="assets/images/slider 1/img10.jpg"
+                        alt="Image #10"
+                    />
+                </div>
+                <div class="slide">
+                    <img
+                        src="assets/images/slider 1/img11.jpg"
+                        alt="Image #11"
+                    />
+                </div>
+                <div class="slide">
+                    <img
+                        src="assets/images/slider 1/img12.jpg"
+                        alt="Image #12"
+                    />
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button
+                    class="prev control-arrow"
+                    onclick="setSlideIndex(-1, 0)"
+                >
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button
+                    class="next control-arrow"
+                    onclick="setSlideIndex(1, 0)"
+                >
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="slider-dots"></div>
+        </div>
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <!--===================| Slider 2 |===================-->
+        <div class="slider" id="slider2">
+            <h3 class="number">
+                <span class="current-slide-num"></span>/<span
+                    class="last-slide-num"
+                ></span>
+            </h3>
+            <div class="slide-wrapper">
+                <div class="slide">
+                    <img src="assets/images/slider 2/img1.jpg" alt="Image #1" />
+                </div>
+                <div class="slide">
+                    <img src="assets/images/slider 2/img2.jpg" alt="Image #2" />
+                </div>
+                <div class="slide">
+                    <img src="assets/images/slider 2/img3.jpg" alt="Image #3" />
+                </div>
+                <div class="slide">
+                    <img src="assets/images/slider 2/img4.jpg" alt="Image #4" />
+                </div>
+                <div class="slide">
+                    <img src="assets/images/slider 2/img5.jpg" alt="Image #5" />
+                </div>
+                <div class="slide">
+                    <img src="assets/images/slider 2/img6.jpg" alt="Image #6" />
+                </div>
+                <div class="slide">
+                    <img src="assets/images/slider 2/img7.jpg" alt="Image #7" />
+                </div>
+                <div class="slide">
+                    <img src="assets/images/slider 2/img8.jpg" alt="Image #8" />
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button
+                    class="prev control-arrow"
+                    onclick="setSlideIndex(-1, 1)"
+                >
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button
+                    class="next control-arrow"
+                    onclick="setSlideIndex(1, 1)"
+                >
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="slider-dots"></div>
+        </div>
+    </body>
+</html>
